@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 0px;
+    width: 100%;
+}
+
+.logoh img{
+    width: 10vw;
+    margin: 0 9.5vw;
+}
+
+.linksh {
+    margin: 0 8.5vw;
+}
+
+.linksh a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 30px;
+    transition: color 0.3s ease;
+}
+
+.linksh a.active {
+    text-decoration: underline #ff006c 5px;
+    font-weight: bold;
+}

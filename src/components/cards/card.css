@@ -1,0 +1,109 @@
+.card {
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 10px 10px;
+    border-radius: 5px;
+    width: 26vw;
+    height: 26vw;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.overlaynome {
+    background-color: #ff006aa1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .overlaynome {
+    opacity: 1;
+}
+
+.overlaycard {
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    overflow-y: auto;
+    scrollbar-width: none;
+    flex-grow: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    transform: translateY(100%);
+    animation: slideIn 0.5s forwards;
+}
+
+.overlaycard.hidden {
+    animation: slideOut 0.5s forwards;
+}
+
+.creditos {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 24vw;
+}
+
+.credito {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.credito h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.credito p {
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.projetoimgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetoimgs img {
+    height: 40rem;
+    width: 50%;
+    margin: 20px 0;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}

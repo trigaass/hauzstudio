@@ -1,0 +1,54 @@
+.servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 44px;
+}
+
+.card-container {
+  background-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  border: 5px solid #ff006c;
+  height: 20vw;
+  width: 25vw;
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out, order 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+}
+
+/* Quando o card é expandido, ele vai para o topo */
+.card-container.expanded {
+  background-color: #ff006c;
+  width: 80vw;
+  order: -1; /* Faz com que o card vá para o topo */
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 20px;
+  transition: padding 0.3s ease-in-out;
+}
+
+.card-title {
+  font-size: 42px;
+  color: white;
+  white-space: nowrap;
+}
+
+.hidden-text {
+  color: white;
+  font-size: 32px;
+  margin-left: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-container.expanded .hidden-text {
+  opacity: 1;
+}
