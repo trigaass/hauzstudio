@@ -23,7 +23,7 @@ export const Card = ({ id }) => {
         setAnimateOut(true);
         setTimeout(() => {
             setShowover(false);
-        }, 500); // Tempo da animação (0.5s)
+        }, 500);
     };
 
     return (

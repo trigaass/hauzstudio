@@ -2,6 +2,7 @@
     "posts": [
         {
             "id": 1,
+            "categoria": "home",
             "backgroundImage": "/hauzbrinqued.png",
             "descrição": "Hauz",
             "projeto": "Hauz",
@@ -16,6 +17,7 @@
         },
         {
             "id": 2,
+            "categoria": "home",
             "backgroundImage": "/hauzbrinqued.png",
             "descrição": "Hauz",
             "projeto": "Hauz",
@@ -30,6 +32,7 @@
         },
         {
             "id": 3,
+            "categoria": "home",
             "backgroundImage": "/hauzbrinqued.png",
             "descrição": "Hauz",
             "projeto": "Hauz",
@@ -44,6 +47,7 @@
         },
         {
             "id": 4,
+            "categoria": "home",
             "backgroundImage": "/hauzbrinqued.png",
             "descrição": "Hauz",
             "projeto": "Hauz",
@@ -58,6 +62,7 @@
         },
         {
             "id": 5,
+            "categoria": "home",
             "backgroundImage": "/hauzbrinqued.png",
             "descrição": "Hauz",
             "projeto": "Hauz",
@@ -72,6 +77,7 @@
         },
         {
             "id": 6,
+            "categoria": "home",
             "backgroundImage": "/hauzbrinqued.png",
             "descrição": "Hauz",
             "projeto": "Hauz",
@@ -86,6 +92,7 @@
         },
         {
             "id": 7,
+            "categoria": "home",
             "backgroundImage": "/hauzbrinqued.png",
             "descrição": "Hauz",
             "projeto": "Hauz",
@@ -100,6 +107,7 @@
         },
         {
             "id": 8,
+            "categoria": "home",
             "backgroundImage": "/hauzbrinqued.png",
             "descrição": "Hauz",
             "projeto": "Hauz",
@@ -114,6 +122,7 @@
         },
         {
             "id": 9,
+            "categoria": "home",
             "backgroundImage": "/hauzbrinqued.png",
             "descrição": "Hauz",
             "projeto": "Hauz",
