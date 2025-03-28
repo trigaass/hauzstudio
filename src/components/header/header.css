@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 0px;
+    width: 100%;
+}
+
+.logoh img {
+    width: 10vw;
+    margin: 0 9.5vw;
+}
+
+.linksh {
+    margin: 0 8.5vw;
+    display: flex;
+    gap: 30px;
+}
+
+.linksh a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+    transition: color 0.3s ease;
+}
+
+.linksh a.active {
+    text-decoration: underline #ff006c 5px;
+    font-weight: bold;
+}
+
+.dropdown {
+    display: grid;
+}
+
+.dropdown p {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+    transition: color 0.3s ease;
+}
+
+.dropdown p.active {
+    text-decoration: underline #ff006c 5px;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: #333;
+    display: grid;
+    position: absolute;
+    top: 120px;
+    right: 8vw;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 5;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #ff006c;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}

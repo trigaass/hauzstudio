@@ -1,0 +1,127 @@
+.banner {
+    margin: 0 auto;
+    width: 80vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.legenda {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10vw 4vw;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.legenda h1 {
+    font-size: 4vw;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.legenda p {
+    font-size: 2vw;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.legenda button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    border-radius: 25px;
+    border: #ff006c 5px solid;
+    cursor: pointer;
+}
+
+.legenda button:hover {
+    background-color: #ff006c;
+    transition: background-color 0.5s ease;
+}
+
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    height: 45vw;
+}
+
+.carrosselimg {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carrosselimg.active {
+    opacity: 1;
+    z-index: 1;
+    animation: slide-in 1s forwards;
+}
+
+.carrosselimg.slide-out {
+    animation: slide-out 1s forwards;
+    z-index: 0;
+}
+
+.carrosselimg.slide-in-reverse {
+    animation: slide-in-reverse 1s forwards;
+    z-index: 1;
+}
+
+.dots {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    gap: 10px;
+}
+
+.dot {
+    background-color: #3d3d3d;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #ff006c;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slide-in-reverse {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

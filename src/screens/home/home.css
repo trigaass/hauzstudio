@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feed a {
+  color:  #fff;
+  text-decoration: underline;
+  font-size: 28px;
+  width: 16vw;
+  margin: 30px;
+}
+
+.feed a:hover {
+  text-decoration: underline #ff006c;
+  cursor: pointer;
+  transition: text-decoration-color 0.5s ease;
+}
+
+.sobre .legendaserv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  margin: 10px 9vw;
+}
+
+.sobre .legendaserv h1 {
+  color: #fff;
+  font-size: 54px;
+  margin-bottom: 40px;
+}
+
+.sobre .legendaserv p {
+  color: #fff;
+  font-size: 38px;
+  margin-bottom: 60px;
+}
+
+.sobre .legendaserv h2 {
+  color: #fff;
+  font-size: 54px;
+  margin-bottom: 20px;
+}
+
+.servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 44px;
+}
+
+.sercdesc{
+  width: 100%;
+  margin: 20px 9vw;
+}
+
+.sercdesc h1{
+  color: #fff;
+  font-size: 62px;
+}
